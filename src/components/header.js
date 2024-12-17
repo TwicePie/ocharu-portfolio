@@ -24,7 +24,7 @@ const Header = () => {
     <header className="bg-neutral text-white" data-aos="fade-down">
       <div className="container mx-auto flex justify-between items-center p-6">
         {/* Logo/Title */}
-        <h1 className="text-3xl font-bold">My Portfolio</h1>
+        <h1 className="text-3xl font-bold">Eka Portfolio</h1>
 
         {/* Navbar for larger screens */}
         <nav className="hidden md:flex space-x-6">

@@ -60,7 +60,7 @@ const MyProjects = () => {
           <div className="card bg-base-100 shadow-xl" data-aos="zoom-in">
             <figure className="px-6 pt-6">
               <Image
-                src="/project1.jpg"
+                src="/images/image3.png"
                 alt="Project 3"
                 width={400}
                 height={250}
@@ -68,11 +68,11 @@ const MyProjects = () => {
               />
             </figure>
             <div className="card-body px-6 pb-6">
-              <h3 className="card-title">Project Title</h3>
+              <h3 className="card-title">Ferrari Copy</h3>
               <p>[Short description of the project.]</p>
               <div className="card-actions justify-end">
                 <Link
-                  href="https://your-project-link.com"
+                  href="https://github.com/TwicePie/ferrari-copy"
                   target="_blank"
                   className="btn btn-link text-primary"
                 >

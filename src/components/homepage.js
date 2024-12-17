@@ -67,7 +67,7 @@ export default function Homepage() {
       <Head>
         <title>My Portfolio</title>
         <meta name="description" content="Welcome to my portfolio homepage." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/Car.jpeg" />
       </Head>
 
       <section
