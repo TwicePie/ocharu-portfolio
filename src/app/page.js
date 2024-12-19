@@ -6,7 +6,7 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden w-full overflow-y-hidden">
       <Header/>
       <Homepage />
       <MyProjects />
