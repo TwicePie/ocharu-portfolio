@@ -92,11 +92,20 @@ export default function Homepage() {
 
       {/* Hero Section */}
       <section
-        className="min-h-screen flex items-center justify-center bg-gradient-to-b from-base-200 to-base-300 py-20 px-4"
+        className="min-h-screen flex items-center justify-center bg-gradient-to-b from-base-200 to-base-300 py-10 px-4"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
         <div className="text-center max-w-4xl mx-auto">
+          {/* Foto Profil */}
+          <div className="flex justify-center mb-6">
+            <img
+              src="/images/profile.JPG" // Ganti dengan path foto Anda
+              alt="Profile Picture"
+              className="w-40 h-40 rounded-full shadow-lg border-4 border-primary"
+            />
+          </div>
+
           <div className="mb-8">
             <div className="h-20 flex items-center justify-center">
               <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
