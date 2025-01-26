@@ -6,6 +6,8 @@ import Link from "next/link";
 export default function Homepage() {
   const [displayedText, setDisplayedText] = useState("");
   const [showButton, setShowButton] = useState(false); // State untuk tombol Back to Top
+  const [theme, setTheme] = useState("light");
+
   const fullTexts = ["Hi, I'm Muhammad Eka", "Or, you can call me Ocharu"];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
@@ -76,6 +78,12 @@ export default function Homepage() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
   const skills = [
     { name: "Web Development", level: "Advanced" },
     { name: "UI/UX Design", level: "Intermediate" },
@@ -89,6 +97,15 @@ export default function Homepage() {
         <meta name="description" content="Welcome to my portfolio homepage." />
         <link rel="icon" href="/images/Car.jpeg" />
       </Head>
+
+      {/* Theme Toggle Button */}
+      <button
+        onClick={toggleTheme}
+        className="fixed top-6 right-6 p-3 bg-primary text-white rounded-full shadow-lg hover:scale-110 transition-transform z-50"
+        aria-label="Toggle Theme"
+      >
+        {theme === "light" ? "🌙" : "☀️"}
+      </button>
 
       {/* Hero Section */}
       <section
