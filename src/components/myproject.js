@@ -30,18 +30,26 @@ const MyProjects = () => {
     {
       id: 4,
       title: "Event Handler",
-      image: "/images/image3.png",
+      image: "/images/image.png",
       description: "A robust event management system helping organizers streamline their event planning process.",
-      link: "https://github.com/TwicePie/ferrari-copy",
+      link: "https://github.com/reddishowo/event-management-web",
       tech: ["React", "Express", "MySQL"],
     },
     {
       id: 5,
       title: "Trip Mobile",
       image: "/images/image4.jpg",
-      description: "A robust event management system helping organizers streamline their event planning process.",
+      description: "A mobile travel companion app featuring trip planning, itinerary management, and location-based recommendations for travelers.",
       link: "https://github.com/Haeryz/Skibidi-skibidi-sigma",
       tech: ["Dart", "Flutter", "Firebase", "Get"],
+    },
+    {
+      id: 6,
+      title: "Material Store E - Commerce",
+      image: "/images/image.png",
+      description: "A comprehensive e-commerce platform for construction materials, featuring product catalog, shopping cart, and secure payment integration.",
+      link: "https://github.com/Haeryz/E-Commerce-depo-79",
+      tech: ["Node.js", "React TS", "Mongo DB", "Express"],
     },
   ];
 
