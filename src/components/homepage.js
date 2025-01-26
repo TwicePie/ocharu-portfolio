@@ -84,6 +84,14 @@ export default function Homepage() {
     document.documentElement.setAttribute("data-theme", newTheme);
   };
 
+  // Set initial theme based on system preference or default to light
+  useEffect(() => {
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const initialTheme = systemPrefersDark ? "dark" : "light";
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+  }, []);
+
   const skills = [
     { name: "Web Development", level: "Advanced" },
     { name: "UI/UX Design", level: "Intermediate" },
