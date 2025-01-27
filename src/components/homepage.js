@@ -273,11 +273,13 @@ export default function Homepage() {
             Check out my latest contributions on GitHub.
           </p>
           <div className="flex justify-center">
-            <img
-              src="https://ghchart.rshah.org/TwicePie"
-              alt="GitHub Contributions"
-              className="w-full max-w-2xl"
-            />
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="https://ghchart.rshah.org/TwicePie"
+                alt="GitHub Contributions"
+                className="w-full max-w-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
