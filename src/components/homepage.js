@@ -264,6 +264,24 @@ export default function Homepage() {
         </div>
       </section>
 
+      {/* GitHub Contributions Section */}
+      <section id="github" className="py-24 bg-base-100" data-aos="fade-up">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-4">GitHub Contributions</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+            Check out my latest contributions on GitHub.
+          </p>
+          <div className="flex justify-center">
+            <img
+              src="https://ghchart.rshah.org/TwicePie"
+              alt="GitHub Contributions"
+              className="w-full max-w-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Back to Top Button */}
       {showButton && (
         <button
