@@ -69,6 +69,8 @@ const MyProjects = () => {
             <div 
               key={project.id}
               className="card bg-base-100 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <figure className="relative h-48 overflow-hidden group">
                 <Image
