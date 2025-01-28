@@ -239,28 +239,40 @@ export default function Homepage() {
             Feel free to reach out for collaborations or just a friendly chat!
             I'm always open to discussing new projects and ideas.
           </p>
-          <div className="flex gap-4 justify-center">
-            <a
-              href="mailto:your.email@example.com"
-              className="btn btn-primary btn-lg group hover:scale-105 transition-transform"
-            >
-              Email Me
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </a>
-          </div>
+          <form action="mailto:kknurarief@gmail.com" method="post" encType="text/plain" className="space-y-4">
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="input input-bordered w-full max-w-md"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                className="input input-bordered w-full max-w-md"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                className="textarea textarea-bordered w-full max-w-md"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" className="btn btn-primary btn-lg w-full sm:w-auto hover:scale-105 transition-transform">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
