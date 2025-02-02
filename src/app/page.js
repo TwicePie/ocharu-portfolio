@@ -3,6 +3,7 @@ import Homepage from "@/components/homepage";
 import MyProjects from "@/components/myproject";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Social from "@/components/social";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header/>
       <Homepage />
       <MyProjects />
+      <Social />
       <Footer/>
     </main>
   );
